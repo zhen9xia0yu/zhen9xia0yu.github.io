@@ -204,7 +204,7 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">November 2, 2021&nbsp;&nbsp;20:40:00</a>
+                        Date: <a href="#">November 3, 2021&nbsp;&nbsp;10:06:15</a>
                         </span>
                     
                     
@@ -258,12 +258,12 @@
 
 <h2 id="测试运行"><a href="#测试运行" class="headerlink" title="测试运行"></a>测试运行</h2><ol>
 <li><p>检验nginx服务是否启动</p>
-<p><img src="nginx-nginx-rtmp-module-rtmp-web-server.assets/sendpix1.jpg" alt="http://10.4.6.79:10300//zhengxiaoyu/.config/tencent-qq//AppData/file//sendpix1.jpg"> </p>
+<p><img src="nginx-nginx-rtmp-module-rtmp-web-server/sendpix1.jpg" alt="http://10.4.6.79:10300//zhengxiaoyu/.config/tencent-qq//AppData/file//sendpix1.jpg"> </p>
 </li>
 <li><p>检验rtmp stat是否可用</p>
 </li>
 </ol>
-<p><img src="nginx-nginx-rtmp-module-rtmp-web-server.assets/sendpix3.jpg" alt="http://10.4.6.79:10300/zhengxiaoyu/.config/tencent-qq//AppData/file//sendpix3.jpg"> </p>
+<p><img src="nginx-nginx-rtmp-module-rtmp-web-server/sendpix3.jpg" alt="http://10.4.6.79:10300/zhengxiaoyu/.config/tencent-qq//AppData/file//sendpix3.jpg"> </p>
 <ol start="3">
 <li><p>检验rtmp-play是否可用</p>
 <ul>
@@ -277,7 +277,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffplay rtmp://127.0.0.1/media4tst/iphone11cast.mp4 <span class="comment">#127.0.0.1:1935 also useful.</span></span><br></pre></td></tr></table></figure>
 
 <p>此时刷新<a href="localhost:10300/stat">localhost:10300/stat</a>，也可看到流的具体信息。</p>
-<p><img src="nginx-nginx-rtmp-module-rtmp-web-server.assets/1635853587187-1635856625630.png" alt="file:///C:/Users/zhen9/AppData/Local/Temp/1635853587187.png"> </p>
+<p><img src="nginx-nginx-rtmp-module-rtmp-web-server/1635853587187-1635856625630.png" alt="file:///C:/Users/zhen9/AppData/Local/Temp/1635853587187.png"> </p>
 </li>
 <li><p>检验rtmp-live是否可用</p>
 <ul>
@@ -285,13 +285,13 @@
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffmpeg -re -stream_loop -1 -i iphone11cast.mp4 -vcodec copy -acodec copy -f flv rtmp://127.0.0.1:1935/live/zxy</span><br></pre></td></tr></table></figure>
 
-<p><img src="nginx-nginx-rtmp-module-rtmp-web-server.assets/sendpix4-1635856708398.jpg" alt="http://10.4.6.79:10300/zhengxiaoyu/.config/tencent-qq//AppData/file//sendpix4.jpg"> </p>
+<p><img src="nginx-nginx-rtmp-module-rtmp-web-server/sendpix4-1635856708398.jpg" alt="http://10.4.6.79:10300/zhengxiaoyu/.config/tencent-qq//AppData/file//sendpix4.jpg"> </p>
 <ul>
 <li>ffplay pull rtmp stream</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ffplay rtmp://127.0.0.1:1935/live/zxy</span><br></pre></td></tr></table></figure>
 
-<p><img src="nginx-nginx-rtmp-module-rtmp-web-server.assets/1635853837040.png" alt="file:///C:/Users/zhen9/AppData/Local/Temp/1635853837040.png"> </p>
+<p><img src="nginx-nginx-rtmp-module-rtmp-web-server/1635853837040.png" alt="file:///C:/Users/zhen9/AppData/Local/Temp/1635853837040.png"> </p>
 </li>
 </ol>
 <hr>
